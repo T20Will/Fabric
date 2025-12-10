@@ -76,50 +76,73 @@ Take a deliberate, step-by-step approach to analyzing the data before creating t
 - Aim the language at a **business owner / primary contact**, not a technician.
 - Use clear headings and subsections with this structure:
 
-  ## EXECUTIVE SUMMARY
-  - 3–7 bullets that summarize the overall state of the computer fleet.
-  - Highlight the top risks and the most important next actions in plain language.
+# Technology Optimization & Growth Review
+**Client:** {{CLIENT_NAME}}
+**Report Date:** {{REPORT_DATE}}
 
-  ## FLEET SNAPSHOT
-  - A short bullet list or small Markdown table with key metrics, such as:
-    - Total devices
-    - Devices by type (laptop/desktop/server/other)
-    - Devices by major OS (e.g., Windows 10, Windows 11, macOS Sonoma, etc., if available)
-    - Average device age and count in each age band (≤3 years, 3–5 years, >5 years)
-    - Count in warranty vs out of warranty vs unknown
-    - Count with low disk space or low RAM (if data is available)
+---
 
-  ## KEY RISKS AND ISSUES
-  - A bullet list where each item includes:
-    - A **short title** (e.g., “Aging Computers Over 5 Years Old”).
-    - The approximate **number of affected devices**.
-    - A brief **business impact** statement (e.g., “higher failure risk and user downtime”).
-    - A concise **recommended action** and rough timeframe (e.g., “Plan to replace these within 6 months”).
+## EXECUTIVE HEALTH SNAPSHOT
 
-  ## REPLACEMENT AND UPGRADE PRIORITIES
-  - A Markdown table or grouped bullets that shows:
-    - **Priority** (e.g., Critical 0–3 months, Important 3–12 months, Monitor).
-    - **Which devices** (refer by device name and/or assigned user; group where reasonable).
-    - **Reason** (e.g., “7 years old, out of warranty, running outdated OS”, “Frequent user performance complaints likely due to low RAM” if you can infer from specs).
-    - **Suggested action** (replace, upgrade RAM/storage, update OS, confirm encryption, etc.).
+- Overall fleet condition: **{{FLEET_CONDITION}}**
+- Most systems: {{MODERNIZATION_SUMMARY}}
+- Primary opportunities: {{PRIMARY_OPPORTUNITIES}}
 
-  ## SECURITY AND RELIABILITY NOTES (IF DATA AVAILABLE)
-  - Bulleted notes on:
-    - Devices running **outdated or unsupported OS versions**.
-    - Devices with **low or unknown backup/encryption/AV status**, if present in the data.
-    - Devices **not seen recently** that might be lost, stolen, or unused.
+Key quantitative indicators:
 
-  ## DATA GAPS AND FOLLOW-UP
-  - List any **important data that is missing or inconsistent** (e.g., no purchase dates, no warranty info, unknown OS on many devices).
-  - For each gap, suggest what should be collected and why it matters to the business.
+- Total devices: **{{TOTAL_DEVICES}}**
+- Average device age: **{{AVG_DEVICE_AGE}} years**
+- Devices older than 3 years: **{{OLDER_THAN_3_YEARS_COUNT}}**
+- Apple Silicon devices: **{{APPLE_SILICON_COUNT}}**
+- Intel devices: **{{INTEL_COUNT}}**
 
-  ## DETAILED DEVICE NOTES (ONLY FOR DEVICES THAT NEED ATTENTION)
-  - Optional final section.
-  - A concise bullet list or table where each row is:
-    - Device name (and/or user)
-    - Key issue(s)
-    - Priority (Critical / Important / Monitor)
-    - Recommended next step
+---
+
+## PRODUCTIVITY STRENGTHS
+
+- {{STRENGTH_1}}
+- {{STRENGTH_2}}
+- {{STRENGTH_3}}
+
+---
+
+## IMPROVEMENT AREAS
+
+- {{IMPROVEMENT_1}}
+- {{IMPROVEMENT_2}}
+- {{IMPROVEMENT_3}}
+
+---
+
+## 12-MONTH TECHNOLOGY INVESTMENT PLAN
+
+Planned or recommended replacements:
+
+- Target replacements: **{{REPLACEMENT_DEVICE_COUNT}} devices**
+- Estimated cost per replacement: **${{REPLACEMENT_UNIT_COST_LOW}} – ${{REPLACEMENT_UNIT_COST_HIGH}}**
+- Estimated total investment: **${{TOTAL_REPLACEMENT_BUDGET_LOW}} – ${{TOTAL_REPLACEMENT_BUDGET_HIGH}}**
+
+---
+
+## REPLACEMENT FORECAST (ILLUSTRATIVE)
+
+| Device | Approx. Age (years) | Recommendation | Budget Range |
+|--------|---------------------|----------------|----------------|
+{{REPLACEMENT_TABLE_ROWS}}
+
+---
+
+## OPERATIONAL RECOMMENDATIONS
+
+- {{OP_RECOMMENDATION_1}}
+- {{OP_RECOMMENDATION_2}}
+- {{OP_RECOMMENDATION_3}}
+
+---
+
+## SUMMARY
+
+With targeted investment and consistent security policy enforcement, {{CLIENT_NAME}} can maintain a modern, reliable, and secure fleet that supports productivity and growth over the next 12–24 months.
 
 - Do **not** output raw CSV, JSON, or code unless it is inside a Markdown code block as a small example table.
 - Do **not** repeat the same sentence structures; vary your phrasing slightly.
